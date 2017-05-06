@@ -10,6 +10,9 @@ html,
 body {
 	font-family: "Source Sans Pro",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 }
+h1.display-3 {
+	font-size: 3rem;
+}
 
 .site-footer {
 	margin-top: 4em;
@@ -66,6 +69,23 @@ body {
 .jumbotron {
 	border-radius: 0;
 }
+.check {
+background-color: green;
+text-align: center;
+width:200px;
+height:200px;
+border:1px solid;
+} 
+.rapper {
+	width:100%;
+	height:200px;
+	border: 1px solid;
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	align-items: flex-start;
+}
+
 
 /* Headings */
 .heading-underline {
@@ -118,10 +138,53 @@ body {
 .article-read-more:last-child {
 	margin-bottom: 0;
 }
+.article row {
+  display:flex;
+  flex-direction: row;
+   justify-content:space-between;
+ 
+}
+.img-fluid {
+	flex:0; 
+}
 
-@media screen and (min-width: 992px) {
+.article-title {
+	flex:1;
+}
+.article-lead {
+	flex:2;
+}
+
+.container2 {
+ display:flex;
+ flex-direction: column;
+}
+
+
+
+@media screen and (min-width:480px) {
+
+	h1.display-3 {
+		font-size: 4.5rem;
+	}
+}
+
+@media screen and (min-width: 990px) {
 
 	.navbar-brand > img {
 	   max-height: 80px;
 	}
 }
+
+
+
+/* 1. Identify the css selector to target
+ the jumbotron title.
+ * 2. set the font size to 3rem
+  for the title.
+  * 3. use a media query to change
+  the font.
+  * size to 4.5rem when it reaches 
+  480px in width.
+  */
+ 
