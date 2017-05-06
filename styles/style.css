@@ -5,10 +5,10 @@
  * Lesson: 1,2
  * Class: Scotland 2017
  */
-
-html,
 body {
 	font-family: "Source Sans Pro",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    background-color:green;
+    color: blue;
 }
 h1.display-3 {
 	font-size: 3rem;
